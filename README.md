@@ -14,4 +14,4 @@ cd to this directory(ie Dotfiles)  and then issue the command- `stow <name-of-fo
 ## NOTE 
 1. The file `xorg.conf` is not stowed. Rather it is symlinked using `Ansible`. Find the YAML file for the same in the Ansible repo.
 
-*** AND JUST LIKE I SETUP MY DOTFILES!! ***  
+***AND JUST LIKE I SETUP MY DOTFILES!!***  
