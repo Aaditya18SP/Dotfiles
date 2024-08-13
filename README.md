@@ -13,5 +13,5 @@ cd to this directory(ie Dotfiles)  and then issue the command- `stow <name-of-fo
 
 ## NOTE 
 1. The file `xorg.conf` is not stowed. Rather it is symlinked using `Ansible`. Find the YAML file for the same in the Ansible repo.
-
+2. I need to solve the ssh issue where I cant push my encrypted ssh keys because git cant read those encrypted keys. It has become cyclic :(
 ***AND JUST LIKE I SETUP MY DOTFILES!!***  
