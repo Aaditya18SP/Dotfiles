@@ -153,12 +153,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:Terminals"
-set $ws2 "2:Firefox"
-set $ws3 "3:Codium"
+set $ws2 "2:Browser"
+set $ws3 "3:Code Editor"
 set $ws4 "4:PDFs"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
+set $ws5 "5:Gimp"
+set $ws6 "6:File Explorer"
+set $ws7 "7:Libreoffice"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -250,5 +250,18 @@ bar {
 
 assign [class="Gnome-terminal"] $ws1
 assign [class="firefox"] $ws2
+assign [class="mercury-default"] $ws2
 assign [class="VSCodium"] $ws3
+assign [class="jetbrains-studio"] $ws3
 assign [class="Evince"] $ws4
+assign [class="Gimp"] $ws5
+assign [class="Thunar"] $ws6
+assign [class="libreoffice-startcenter"] $ws7
+
+for_window [class="^.*"] border pixel 0
+smart_gaps inverse_outer
+gaps outer 8px
+gaps inner 8px
+
+workspace 2 gaps outer 0
+workspace 2 gaps inner 0

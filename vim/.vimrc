@@ -10,6 +10,8 @@ set guicursor=
 call plug#begin()
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim' " or other package manager
@@ -31,9 +33,10 @@ nnoremap <C-k> :cprev<CR>
 nnoremap <C-e> :copen<CR>
 vnoremap <leader>y "+y
 nnoremap <leader>y "+y
+vnoremap <leader>p "+p
+nnoremap <leader>p "+p
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-
 
 " lsp configuration
 if executable('pylsp')
@@ -73,3 +76,6 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+
+" This is to get the backspace key working when built from source
+set backspace=indent,eol,start
