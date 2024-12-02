@@ -1,0 +1,8 @@
+
+! ## Keybindings ##
+XTerm*vt100.translations: #override \n\
+  Ctrl <Key>+: larger-vt-font() \n\
+  Ctrl <Key>-: beep() \n\
+  Ctrl <Key>0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\

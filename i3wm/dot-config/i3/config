@@ -255,6 +255,7 @@ bar {
 # ///////////////////////////////////////////////////////////////////////////////
 
 assign [class="Gnome-terminal"] $ws1
+assign [class="XTerm"] $ws1
 assign [class="firefox"] $ws2
 assign [class="mercury-default"] $ws2
 assign [class="VSCodium"] $ws3

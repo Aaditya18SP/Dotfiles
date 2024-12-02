@@ -1,5 +1,8 @@
 ! ## Scrollbar ##
-XTerm*vt100.scrollBar: false
+XTerm*vt100.scrollBar: true
+XTerm*vt100.rightScrollBar: true
+
+XTerm*internalBorder: 8
 
 ! Do not scroll when there is new input
 XTerm*scrollTtyOutput: false
@@ -13,7 +16,7 @@ XTerm*highlightSelection: true
 ! Remove trailing spaces
 XTerm*trimSelection: true
 
-! Fonts
+! Fonts 
 
 XTerm*faceName: monospace
 XTerm*faceSize: 20
@@ -21,11 +24,15 @@ XTerm*faceSize: 20
 
 ! ## Keybindings ##
 XTerm*vt100.translations: #override \n\
-  Ctrl <Key>-: smaller-vt-font() \n\
   Ctrl <Key>+: larger-vt-font() \n\
+  Ctrl <Key>-: smaller-vt-font() \n\
   Ctrl <Key>0: set-vt-font(d) \n\
   Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>J: scroll-forw(1, line) \n\
+  Ctrl Shift <Key>K: scroll-back(1, line) \n\
+
+
 
 ! Color Scheme
 XTerm*background: #000000
