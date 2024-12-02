@@ -16,7 +16,7 @@ XTerm*trimSelection: true
 ! Fonts
 
 XTerm*faceName: monospace
-XTerm*faceSize: 18
+XTerm*faceSize: 20
 
 
 ! ## Keybindings ##

@@ -45,7 +45,11 @@ exec --no-startup-id nm-applet
 # Authentication agent when applications ask for sudo password
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
+#Load the xrdb resources during startup for XTerm
 exec --no-startup-id xrdb -load .Xresources
+
+#Start picom for making the background transparent
+exec --no-startup-id picom --config ~/.config/picom/picom.conf&
 # //////////////////////////////////////////////////////////////////////////////////////////////////
 
 # Use Mouse+$mod to drag floating windows to their wanted position
