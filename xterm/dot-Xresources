@@ -1,8 +1,8 @@
 ! ## Scrollbar ##
 XTerm*vt100.scrollBar: true
 XTerm*vt100.rightScrollBar: true
-
-XTerm*internalBorder: 8
+XTerm*internalBorder: 20
+XTerm*termName: xterm-256color
 
 ! Do not scroll when there is new input
 XTerm*scrollTtyOutput: false
@@ -38,3 +38,5 @@ XTerm*vt100.translations: #override \n\
 XTerm*background: #000000
 XTerm*foreground: #ffffff
 
+XTerm*disallowedWindowOps: 20,21,SetXprop
+XTerm*allowWindowOps: false
