@@ -165,18 +165,18 @@ int main(){
     int s2= string_idx;
 
 
-    if(s1_found){
-        printf("\nS1:%s\n", search_result_1);
-    }
-    if(s2_found){
-        printf("S2:%s\n", search_result_2);
-    }
-    if(s3_found){
-        printf("S3:%s\n", search_result_3);
-    }
-    if(s4_found){
-        printf("S4:%s\n", search_result_4);
-    }
+//    if(s1_found){
+//        printf("\nS1:%s\n", search_result_1);
+//    }
+//    if(s2_found){
+//        printf("S2:%s\n", search_result_2);
+//    }
+//    if(s3_found){
+//        printf("S3:%s\n", search_result_3);
+//    }
+//    if(s4_found){
+//        printf("S4:%s\n", search_result_4);
+//    }
 
     char *discharging = "Discharging";
     int is_discharging =0;
