@@ -36,7 +36,7 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- convert /home/aadityapal/Pictures/Wallpapers/Ferrari_Enzo_3.jpg RGB:- | i3lock --nofork --raw 1920x1080:rgb --image /dev/stdin
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -50,6 +50,9 @@ exec --no-startup-id xrdb -load .Xresources
 
 #Start picom for making the background transparent
 exec --no-startup-id picom --config ~/.config/picom/picom.conf&
+
+#Start my own program to check the battery percent and display the notifications for the same 
+exec --no-startup-id /home/aadityapal/Projects/Dotfiles/bash_scripts/check_battery_daemon.o&
 # //////////////////////////////////////////////////////////////////////////////////////////////////
 
 # Use Mouse+$mod to drag floating windows to their wanted position
