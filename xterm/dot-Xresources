@@ -6,10 +6,10 @@ XTerm*termName: xterm-256color
 
 ! Do not scroll when there is new input
 ! XTerm*scrollTtyOutput: false
+XTerm*saveLines:0
 
 ! Scrolling by using Shift-PageUp / Shift-PageDown or mousewheel by default ##
 ! Lines of output you can scroll back over
-XTerm*saveLines: 15000
 
 ! ## Select text ##
 XTerm*highlightSelection: true

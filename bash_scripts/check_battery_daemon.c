@@ -225,7 +225,7 @@ int main(){
 
 
 
-        struct timeval timeInterval = {3, 0}; //sleep for 5 minutes ie 300 seconds and 0 microseconds
+        struct timeval timeInterval = {300, 0}; //sleep for 5 minutes ie 300 seconds and 0 microseconds
                                               //more reliable than sleep according to GNU C docs than 'sleep'
         select(0, NULL, NULL, NULL,&timeInterval);
         //sleep(2);

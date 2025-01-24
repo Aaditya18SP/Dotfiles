@@ -1,3 +1,8 @@
 [user]
 	email = 107549181+Aaditya18SP@users.noreply.github.com
 	name = Aaditya Pal
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
